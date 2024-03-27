@@ -7,16 +7,58 @@
 </head>
 <body>
     <form>
-        <label for="nome">Nome
-            <input type="text" id="nome">
-        </label><br>  
-        <label for="email">Email
-            <input type="email" id="email" required>
-        </label><br>
-        <input type="radio" name="preco">R$150,00<br>
-        <input type="radio" name="preco">R$150,00<br>
-        <input type="radio" name="preco">R$150,00<br>
-        <input type="radio" name="preco">R$150,00<br>
+        <div>
+            <label for="nome" >Nome
+                <input type="text" id="nome">
+            </label><br>  
+            <label for="email">Email
+                <input type="email" id="email" required>
+            </label><br>            
+        </div>
+       
+       
+        <div>
+            RADIO<br>
+            <label> 
+                <input type="radio" id="preco1" name="preco" value="150">R$150,00<br>
+            </label>   
+            <label>
+                <input type="radio" id="preco2" name="preco" value="150">R$150,00<br>
+            </label>
+            <label>
+                <input type="radio" id="preco3" name="preco" value="150">R$150,00<br>
+            </label>
+            <label> 
+                <input type="radio" id="preco4" name="preco" value="150">R$150,00<br>
+            </label>   
+
+        </div>
+          
+           <div>
+                Checkbox<br>
+                <label> 
+                    <input type="checkbox" id="varios1" name="varios" value="150">R$150,00<br>
+                </label>
+                <label> 
+                    <input type="checkbox" id="varios2" name="varios" value="150">R$150,00<br>
+                </label>
+                <label> 
+                    <input type="checkbox" id="varios3" name="varios" value="150">R$150,00<br>
+                </label>
+                <label> 
+                    <input type="checkbox" id="varios4" name="varios" value="150">R$150,00<br>
+                </label>
+           </div>    
+        <div>
+            <label>Selecione o estado:</label>
+            <select name="" id="">
+                <option value="">RIO DE JANEIRO</option>
+                <option value="">SÃO PAULO</option>
+                <option value="">BAHIA</option>
+                <option value="">CEARA</option>
+            </select>
+        </div>
+        
         <button>Enviar formulario</button>
     </form>
 </body>
