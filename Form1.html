@@ -1,25 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <form >
-            <label for="nome">Nome
-                <input id="nome" type="text">
-            </label><br><br>
-            <label for="email">Email
-                <input id="email" type="email" required>
-            </label><br><br>
-            <label>Escolha o valor do seu Salario</label><br>
-            <input type="radio" id="salario1" name="salario" value="10.000">R10.000<br>
-            <input type="radio" id="salario2" name="salario" value="15.000">R15.000<br>
-            <input type="radio" id="salario3" name="salario" value="20.000">R20.000<br>
-            <input type="radio" id="salario4" name="salario" value="25.000">R25.000<br>
-            <br>
-            <button>Enviar</button>
-        </form>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        /* Additional Styles */
+        input[type="radio"] + label,
+        input[type="checkbox"] + label {
+            cursor: pointer;
+        }
+        select {
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            width: 100%;
+            font-size: 16px;
+            box-sizing: border-box;
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7 10l5 5 5-5z"/></svg>');
+            background-repeat: no-repeat;
+            background-position-x: 100%;
+            background-position-y: 50%;
+            padding-right: 30px;
+        }
+        textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" placeholder="Digite um nome">
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Digite um email" required>
+
+        <label>Escolha o valor do seu Salário</label><br>
+        <input type="radio" id="salario1" name="salario" value="10.000"><label for="salario1">R$10.000</label><br>
+        <input type="radio" id="salario2" name="salario" value="15.000"><label for="salario2">R$15.000</label><br>
+        <input type="radio" id="salario3" name="salario" value="20.000"><label for="salario3">R$20.000</label><br>
+        <input type="radio" id="salario4" name="salario" value="25.000"><label for="salario4">R$25.000</label><br>
+
+        <label>Checkbox</label><br>
+        <input type="checkbox" id="varios1" name="varios" value="150"><label for="varios1">R$150,00</label><br>
+        <input type="checkbox" id="varios2" name="varios" value="150"><label for="varios2">R$150,00</label><br>
+        <input type="checkbox" id="varios3" name="varios" value="150"><label for="varios3">R$150,00</label><br>
+        <input type="checkbox" id="varios4" name="varios" value="150"><label for="varios4">R$150,00</label><br>
+
+        <label>Selecione um estado:</label><br> 
+        <select>
+            <option value="" disabled selected hidden>Escolha uma opção</option>
+            <option value="RIO DE JANEIRO">RIO DE JANEIRO</option>
+            <option value="SÃO PAULO">SÃO PAULO</option>
+            <option value="BAHIA">BAHIA</option>
+            <option value="CEARA">CEARA</option>
+        </select><br>
+
+        <label>Digite seu comentário:</label><br>
+        <textarea name="comentario" id="comentario" cols="30" rows="5" placeholder="Digite seu comentário"></textarea><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
 </html>
