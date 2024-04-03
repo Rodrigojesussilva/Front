@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p
+        {
+            color: red
+        }
+        p.exp-1
+        {
+            display: block;
+        }
+        p.exp-2
+        {
+            display: inline;
+        }
+        p.exp-3
+        {
+            display: inline-block;
+        }
+        .Aparecer:hover p.exp-4
+        {
+            display: block;
+        }
+        p.exp-4
+        {
+            display: none;
+        }
+       
+    </style>    
+</head>
+<body>
+   <p class="exp-1">
+    texto1
+   </p> 
+   <div>
+    Texto abc
+       <p class="exp-2">
+        texto2
+       </p> 
+    Texto abc
+   </div>
+  
+   <div>
+    Texto abc
+       <p class="exp-3">
+        texto3
+       </p> 
+    Texto abc
+   </div>
+
+   <div class="Aparecer">
+    Aparecer
+    <p class="exp-4">
+        texto4
+    </p> 
+   </div>
+   
+</body>
+</html>
