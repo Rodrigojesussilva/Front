@@ -9,9 +9,9 @@
         {
             background: violet;
             color: #fff;
-            margin: 40px 0;
-            position: relative;
+            margin: 40px 0;           
             height: 150px;
+            position: relative;
             
         }
         .filho-relative
@@ -19,9 +19,9 @@
           
            background: red;
            position: relative;
-           top: 10px;
-           left: 20px;
-           bottom: 20px;
+           top: 20px;
+           left: 30px;
+           bottom: 30px;
            right: 50px;
            width: 120px;
            
@@ -30,8 +30,8 @@
         {
             background: red;
             position: absolute;
-            top: 100px;
-            right: 0px;
+            top: 10px;
+            
 
         }
         .fixed
@@ -42,14 +42,13 @@
             bottom: 20px;
             right: 30px;
             background: red;
-
             z-index: 999;
         }
     </style>
 </head>
-<body>
+<body>   
     <div class="fixed">
-      Texto Fixed
+texto fixed
     </div>
 
     <div class="container">
@@ -59,25 +58,11 @@
         </div>
         Texto 3
     </div>
+  
     <div class="container">
         Texto 1
         <div class="filho-absolute">
-        Texto 2
-        </div>
-        Texto 3
-    </div>
-
-    <div class="container">
-        Texto 1
-        <div class="filho-relative">
-        Texto 2
-        </div>
-        Texto 3
-    </div>
-    <div class="container">
-        Texto 1
-        <div class="filho-absolute">
-        Texto 2
+          Texto 2
         </div>
         Texto 3
     </div>
@@ -89,12 +74,14 @@
         </div>
         Texto 3
     </div>
+  
     <div class="container">
         Texto 1
         <div class="filho-absolute">
-        Texto 2
+          Texto 2
         </div>
         Texto 3
     </div>
+
 </body>
 </html>
