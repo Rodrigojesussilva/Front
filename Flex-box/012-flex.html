@@ -10,19 +10,19 @@
   <style>
     .flex {
       display: flex;
-      flex-direction: column;
+      
     }
-
-    .flex .item {
+    .flex .item
+    {      /*flex trablha flex grow, flex shrink, flex basis*/
       flex: 1 1 auto;
     }
-
-    .flex .item:nth-of-type(4) {
-      flex: 0 1 500px;
+    .flex .item:nth-of-type(4)
+    {
+       flex: 0 1 500px; 
     }
-
-    .flex .item:nth-of-type(1) {
-      flex: 0 8 auto;
+    .flex .item:nth-of-type(1)
+    {
+       flex: 0 5 auto; 
     }
   </style>
 </head>
@@ -30,11 +30,12 @@
 <body>
 
   <main class="flex">
+
     <div class="item">1</div>
     <div class="item">2</div>
     <div class="item">3</div>
     <div class="item">4</div>
-    <div class="item">4</div>
+    <div class="item">5</div>
   </main>
 
 </body>
